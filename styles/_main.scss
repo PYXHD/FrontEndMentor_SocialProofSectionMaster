@@ -1,0 +1,160 @@
+main {
+  max-width: 1120px;
+  margin: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin: 100px 20px;
+  }
+
+  .top-part {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      margin-bottom: 50px;
+    }
+
+    .top-part-left {
+      padding-right: 35%;
+
+      @media screen and (max-width: 768px) {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+        font-weight: 800;
+        color: $veryDarkMagenta;
+        margin-bottom: 35px;
+      }
+
+      p {
+        font-weight: 700;
+        color: $darkMagenta;
+        line-height: 20px;
+      }
+    }
+
+    .top-part-right {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .score {
+        width: 78%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background-color: $lightMagenta;
+        border-radius: 10px;
+        padding: 20px 35px;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          flex-direction: column;
+          gap: 10px;
+          padding: 15px 35px;
+        }
+
+        .star-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 5px;
+        }
+        span {
+          font-weight: 700;
+          color: $veryDarkMagenta;
+        }
+      }
+
+      .reviews {
+        align-self: flex-start;
+
+        @media screen and (max-width: 768px) {
+          align-self: auto;
+        }
+      }
+      .reportguru {
+        align-self: center;
+
+        @media screen and (max-width: 768px) {
+          align-self: auto;
+        }
+      }
+      .besttech {
+        align-self: flex-end;
+
+        @media screen and (max-width: 768px) {
+          align-self: auto;
+        }
+      }
+    }
+  }
+
+  .bottom-part {
+    min-height: 270px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .identity-card {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      background-color: $veryDarkMagenta;
+      padding: 40px 30px 45px;
+      border-radius: 10px;
+
+      .identity {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .identity-img {
+          width: 40px;
+          border-radius: 20px;
+        }
+
+        .identity-name {
+          line-height: 20px;
+          .name {
+            font-weight: 700;
+            color: $white;
+          }
+
+          .role {
+            color: $softPink;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 20px;
+        color: $white;
+      }
+    }
+
+    .smith {
+      align-self: flex-start;
+    }
+    .roberts {
+      align-self: center;
+    }
+    .wallace {
+      align-self: flex-end;
+    }
+  }
+}

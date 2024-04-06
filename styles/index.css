@@ -1,0 +1,237 @@
+@font-face {
+  font-family: LeagueSpartan;
+  src: url(../fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+html {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: LeagueSpartan, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+    background-image: url(../img/bg-pattern-top-mobile.svg), url(../img/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+}
+
+main {
+  max-width: 1120px;
+  margin: 20px;
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin: 100px 20px;
+  }
+}
+main .top-part {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  main .top-part {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+}
+main .top-part .top-part-left {
+  padding-right: 35%;
+}
+@media screen and (max-width: 768px) {
+  main .top-part .top-part-left {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+main .top-part .top-part-left h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: rgb(80, 32, 80);
+  margin-bottom: 35px;
+}
+main .top-part .top-part-left p {
+  font-weight: 700;
+  color: rgb(147, 123, 146);
+  line-height: 20px;
+}
+main .top-part .top-part-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+main .top-part .top-part-right .score {
+  width: 78%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  background-color: rgb(247, 242, 247);
+  border-radius: 10px;
+  padding: 20px 35px;
+}
+@media screen and (max-width: 768px) {
+  main .top-part .top-part-right .score {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    padding: 15px 35px;
+  }
+}
+main .top-part .top-part-right .score .star-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+}
+main .top-part .top-part-right .score span {
+  font-weight: 700;
+  color: rgb(80, 32, 80);
+}
+main .top-part .top-part-right .reviews {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+@media screen and (max-width: 768px) {
+  main .top-part .top-part-right .reviews {
+    -ms-flex-item-align: auto;
+        align-self: auto;
+  }
+}
+main .top-part .top-part-right .reportguru {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+@media screen and (max-width: 768px) {
+  main .top-part .top-part-right .reportguru {
+    -ms-flex-item-align: auto;
+        align-self: auto;
+  }
+}
+main .top-part .top-part-right .besttech {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+@media screen and (max-width: 768px) {
+  main .top-part .top-part-right .besttech {
+    -ms-flex-item-align: auto;
+        align-self: auto;
+  }
+}
+main .bottom-part {
+  min-height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 25px;
+}
+@media screen and (max-width: 768px) {
+  main .bottom-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+}
+main .bottom-part .identity-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  background-color: rgb(80, 32, 80);
+  padding: 40px 30px 45px;
+  border-radius: 10px;
+}
+main .bottom-part .identity-card .identity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+main .bottom-part .identity-card .identity .identity-img {
+  width: 40px;
+  border-radius: 20px;
+}
+main .bottom-part .identity-card .identity .identity-name {
+  line-height: 20px;
+}
+main .bottom-part .identity-card .identity .identity-name .name {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+main .bottom-part .identity-card .identity .identity-name .role {
+  color: rgb(238, 104, 164);
+}
+main .bottom-part .identity-card p {
+  font-size: 1.1rem;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+}
+main .bottom-part .smith {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+main .bottom-part .roberts {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+main .bottom-part .wallace {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}/*# sourceMappingURL=index.css.map */
